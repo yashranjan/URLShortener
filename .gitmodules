@@ -1,0 +1,3 @@
+[submodule "URLShortener-React"]
+	path = URLShortener-React
+	url = https://github.com/yashranjan/URLShortener-React
