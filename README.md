@@ -23,7 +23,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This is the backend of an URL website. Go to this [link](URLShortener-React/) to know further.
+This is the backend of an URL website. Go to this [link](https://github.com/yashranjan/URLShortener-React) to know further.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -62,7 +62,7 @@ pip -r requirements.txt
 python manage.py runserver
 ```
 
-5 Though there's nothing visually appealing website in this repo, you can clone the frontend ([link](URLShortener-React/)) as well to use/test all the APIs of backend.
+5 Though there's nothing visually appealing website in this repo, you can clone the frontend ([link](https://github.com/yashranjan/URLShortener-React)) as well to use/test all the APIs of backend.
 
 ## 🖥️ The website is hosted here <a name = "try_here"></a>
 
