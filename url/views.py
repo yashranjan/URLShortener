@@ -4,6 +4,7 @@ from django.http import JsonResponse,Http404
 
 import json
 from hashids import Hashids
+import validators
 
 from .models import URLField
 
@@ -28,7 +29,7 @@ def process_url(request):
 	if request.method == 'GET':
 		urlEntered = data.get('urlentered',None)
 		choiceEntered = data.get('choiceentered',None)
-		if urlEntered:
+		if urlEntered and validators.url(urlEntered):
 			if choiceEntered:
 				# process it to see if it can be made a short url
 				try:
@@ -52,7 +53,7 @@ def process_url(request):
 					responseData['status']=500
 					responseData['error']='Something went wrong while inserting data!!'
 		else:
-			responseData['error']='URL not provided!!' 
+			responseData['error']='URL not provided or it not valid!!' 
 			responseData['status']=405
 	else:
 		responseData['status']=405
